@@ -76,6 +76,9 @@ data <- formatData(data)
 # Open PNG graphics device
 png('plot2.png', width = 480, height = 480, units = 'px')
 
+# Set background to transparent
+par(bg = NA)
+
 # Draw plot
 plotGlobalActivePower()
 

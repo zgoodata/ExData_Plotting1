@@ -54,6 +54,9 @@ data <- formatData(data)
 # Open PNG graphics device
 png('plot1.png', width = 480, height = 480, units = 'px')
 
+# Set background to transparent
+par(bg = NA)
+
 # Create histogram plot
 hist(data$Global_active_power,
      col = 'red',

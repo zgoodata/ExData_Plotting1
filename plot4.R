@@ -147,6 +147,9 @@ data <- formatData(data)
 # Open PNG graphics device
 png('plot4.png', width = 480, height = 480, units = 'px')
 
+# Set background to transparent
+par(bg = NA)
+
 # Set graphics device to 2x2 array of plots
 par(mfcol = c(2, 2))
 
